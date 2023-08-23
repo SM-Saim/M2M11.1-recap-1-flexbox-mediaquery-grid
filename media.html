@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: blueviolet;
+        height: 200px;
+      }
+
+      /* media query */
+
+      @media screen and (max-width: 672px) {
+        .container {
+          background-color: rgb(47, 38, 167);
+        }
+      }
+      @media screen and (min-width: 673px) and (max-width: 992px) {
+        .container {
+          background-color: rgb(38, 167, 60);
+        }
+      }
+      @media screen and (min-width: 993px) and (max-width: 1002px) {
+        .container {
+          background-color: rgb(158, 167, 38);
+        }
+      }
+      @media screen and (max-width: 1003px) {
+        .container {
+          background-color: rgb(167, 57, 38);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>

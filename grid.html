@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .container {
+        display: grid;
+        height: 500px;
+        border: 1px solid red;
+        grid-template-columns: 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        /* justify-content: center;
+        align-content: center; */
+        grid-auto-rows: 50px;
+      }
+      .common {
+        background-color: aquamarine;
+      }
+      .part-1 {
+        background-color: rgb(0, 255, 106);
+        justify-self: center;
+        align-self: center;
+        width: 50%;
+        height: 50%;
+      }
+      .part-2 {
+        background-color: blue;
+      }
+      .part-3 {
+        background-color: rgb(255, 136, 0);
+      }
+      .part-4 {
+        background-color: rgb(234, 0, 255);
+        grid-column: 1/5;
+      }
+      .part-5 {
+        background-color: rgb(0, 183, 255);
+      }
+      .part-6 {
+        background-color: rgb(255, 217, 0);
+      }
+      .part-7 {
+        background-color: rgb(65, 145, 20);
+      }
+      .part-8 {
+        background-color: rgb(255, 214, 80);
+      }
+      .part-9 {
+        background-color: rgb(15, 99, 138);
+      }
+      .part-10 {
+        background-color: rgb(88, 86, 45);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="common part-1">1</div>
+      <div class="common part-2">2</div>
+      <div class="common part-3">3</div>
+      <div class="common part-4">4</div>
+      <div class="common part-5">5</div>
+      <div class="common part-6">6</div>
+      <div class="common part-7">7</div>
+      <div class="common part-8">8</div>
+      <div class="common part-9">9</div>
+      <div class="common part-10">10</div>
+      <div class="common part-8">11</div>
+      <div class="common part-7">12</div>
+      <div class="common part-7">12</div>
+    </div>
+  </body>
+</html>
